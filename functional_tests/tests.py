@@ -5,11 +5,11 @@ Date: September 8, 2014
 
 from selenium import webdriver
 
-import unittest
+from django.test import LiveServerTestCase
 
 import time
 
-class NewUserTest(unittest.TestCase):
+class NewUserTest(LiveServerTestCase):
 	def setUp(self):
 		self.browser = webdriver.Firefox()
 
